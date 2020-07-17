@@ -1,0 +1,75 @@
+@import './../../_utils.scss' ;
+
+.ham{
+    width: 30px;
+    height: 30px;
+}
+
+#navBar{
+    
+    .topbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        // Dev
+        background-color: #e3e3e3;
+    }
+
+    .wdNav{
+        display: none
+    }
+}
+
+
+.gradientText {
+    background: -webkit-linear-gradient(45deg,#7aa4ff , #847AFF);
+    background-position: 2px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    a:hover{
+        border: none !important;
+    }
+}
+
+
+.navLinks{
+    a:hover{
+        color: $primaryDark !important;
+        border-bottom: 3px solid $primaryDark;
+    }
+}
+
+
+// Media queries
+
+@media only screen and (min-width:1000px){
+    #navBar{
+        .mobileNav{
+            display: none;
+        }
+
+        .wdNav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+            #navList{
+
+                li{
+                    display: inline;
+                    list-style: none;
+
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        color: $textNavColor;
+                        font-weight: 600;
+                        padding: 30px 20px 10px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
