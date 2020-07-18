@@ -49,6 +49,8 @@
                         font-weight: 500;
                     }
                 }
+
+                
             }
         }
     }
@@ -72,15 +74,20 @@
     a:hover{
         border: none !important;
     }
-}
 
-
-.navLinks{
-    a:hover{
-        color: $primaryDark !important;
-        border-bottom: 3px solid $primaryDark;
+    a:hover + .gradientText{
+        display: none !important;
     }
+
+    
 }
+
+
+.navLinks:hover a{
+    color: $primaryDark !important;
+    border-bottom: 3px solid $primaryDark;
+}
+
 
 
 // Media queries

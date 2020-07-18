@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './NavBar.scss'
 import hamMenu from './../../assets/ham_menu.svg';
+import ResumeBtn from '../../Components/ResumeBtn/ResumeBtn';
 const NavBar = () => {
 
     const [drawerState,setDrawerState] = useState(true);
@@ -8,6 +9,7 @@ const NavBar = () => {
     return (
         <nav id="navBar">
             {/* Mobile nav */}
+            <ResumeBtn/>
             <div className="mobileNav">
                 <div id="drawer" onClick={()=>setDrawerState(true)} className={drawerState?"drawer-closed":"drawer-opeaned"}>
                     <ul id="mb-nav-links">
@@ -15,6 +17,7 @@ const NavBar = () => {
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Clicks</a></li>
                         <li><a href="#">Achievements</a></li>
+                        
                     </ul>
                 </div>
                 <div className="topbar">
