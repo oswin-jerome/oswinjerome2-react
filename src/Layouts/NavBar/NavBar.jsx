@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NavBar.scss'
 import hamMenu from './../../assets/ham_menu.svg';
 const NavBar = () => {
+
+    const [drawerState,setDrawerState] = useState(true);
+    
     return (
         <nav id="navBar">
             {/* Mobile nav */}
             <div className="mobileNav">
+                <div id="drawer" onClick={()=>setDrawerState(true)} className={drawerState?"drawer-closed":"drawer-opeaned"}>
+                    <ul id="mb-nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Clicks</a></li>
+                        <li><a href="#">Achievements</a></li>
+                    </ul>
+                </div>
                 <div className="topbar">
-                    <img className="ham" src={hamMenu} alt=""/>
+                    <img className="ham" src={hamMenu} alt="" onClick={()=>{
+                        setDrawerState(!drawerState);
+                        console.log(drawerState);
+                    }}/>
                     <p className="logo">Logo</p>
                 </div>
             </div>
