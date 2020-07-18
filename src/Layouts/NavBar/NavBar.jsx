@@ -1,17 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './NavBar.scss'
 import hamMenu from './../../assets/ham_menu.svg';
 import ResumeBtn from '../../Components/ResumeBtn/ResumeBtn';
+import { gsap } from "gsap";
 const NavBar = () => {
 
     const [drawerState,setDrawerState] = useState(true);
-    
+
+    useEffect(()=>{
+        // Auto activated animation
+        var t = gsap.timeline();
+        t.from('.navLinks',0.5,{opacity:0,y:'-100%',ease:"easeInOut",stagger:0.2},"+=0.5")
+        t.play()
+    },[])
+
+    const animateMobIn = ()=>{
+        var t = gsap.timeline();
+        t.from('#mb-nav-links li',0.5,{opacity:0,x:'-100%',skewX:30,stagger:0.2})
+        t.play()
+    }
     return (
         <nav id="navBar">
             {/* Mobile nav */}
             <ResumeBtn/>
             <div className="mobileNav">
-                <div id="drawer" onClick={()=>setDrawerState(true)} className={drawerState?"drawer-closed":"drawer-opeaned"}>
+                <div id="drawer" onClick={()=>setDrawerState(true)} className={drawerState?"drawer-closed":"drawer-opeaneds"}>
                     <ul id="mb-nav-links">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Projects</a></li>
@@ -22,6 +35,7 @@ const NavBar = () => {
                 </div>
                 <div className="topbar">
                     <img className="ham" src={hamMenu} alt="" onClick={()=>{
+                        animateMobIn();
                         setDrawerState(!drawerState);
                         console.log(drawerState);
                     }}/>

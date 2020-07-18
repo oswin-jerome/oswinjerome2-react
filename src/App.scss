@@ -17,3 +17,9 @@
     transition: all 1s;
     pointer-events: none;
 }
+
+@media only screen and (min-width:1000px){
+    #getResumeMob{
+        display: none;
+    }
+}
