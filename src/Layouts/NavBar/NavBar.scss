@@ -6,7 +6,8 @@
 }
 
 #navBar{
-    
+    height: 70px;
+    z-index: 999;
     .topbar{
         display: flex;
         align-items: center;
@@ -22,7 +23,8 @@
 
     .mobileNav{
         #drawer{
-            background-color: rgba(0, 0, 0, 0.678);
+            z-index: 99999;
+            background-color: rgba(0, 0, 0, 0.808);
             position: absolute;
             top: 0;
             bottom: 0;
