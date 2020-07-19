@@ -16,7 +16,8 @@ const NavBar = () => {
     var t;
     const animateMobIn = ()=>{
         t = gsap.timeline();
-        t.from('#mb-nav-links li',0.5,{opacity:0,x:'-100%',skewX:30,stagger:0.2})
+        // t.from('#mb-nav-links li',0.5,{opacity:0,x:'-100%',skewX:30,stagger:0.2})
+        t.fromTo("#mb-nav-links li",{opacity:0,x:'-100%',skewX:30,stagger:0.2},{duration:0.5,opacity:1,x:'0',skewX:0,stagger:0.2})
         t.play()
     }
 

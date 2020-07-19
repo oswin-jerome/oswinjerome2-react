@@ -1,0 +1,17 @@
+#homePage div.c:nth-child(even){
+    background-color: rgb(245, 245, 245) !important;
+    
+}
+.c{
+    scroll-snap-align: start;
+}
+
+body{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+// dev
+
+// #homePage .c{
+//     min-height: 10vh;
+// }
