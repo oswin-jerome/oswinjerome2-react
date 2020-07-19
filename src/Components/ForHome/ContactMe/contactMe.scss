@@ -1,0 +1,38 @@
+.contact{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    // justify-content: center;
+    a{
+        text-decoration: none;
+    }
+    div{
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        img{
+            height:  30px;
+            margin: 5px;
+        }
+        p{
+            margin-left: 20px;
+        }
+    }
+}
+
+
+@media only screen and (min-width:650px){
+    .contact{
+        width: 70%;
+        margin-top: 50px;
+    }
+}
+@media only screen and (min-width:650px){
+    .contact{
+        width: 60%;
+        margin-top: 70px;
+        grid-template-columns: 1fr 1fr;
+    }
+}

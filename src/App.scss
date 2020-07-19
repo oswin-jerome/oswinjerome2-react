@@ -17,9 +17,24 @@
     transition: all 1s;
     pointer-events: none;
 }
+.padder{
+    padding: 70px 0px 70px  0px !important;
+}
+
+.shadow{
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.116);
+}
+
+.rounded-border{
+    border-radius: 10px;
+}
 
 @media only screen and (min-width:1000px){
     #getResumeMob{
         display: none;
+    }
+
+    .padder{
+        padding: 120px 0px 120px  0px !important;
     }
 }

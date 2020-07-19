@@ -24,7 +24,7 @@ const Hero = () => {
         timeline.from("#name",0.5,{opacity:0,x:50},"-=0.2");
         timeline.from("#desc",0.5,{opacity:0})
         timeline.from("#sc",0.5,{opacity:0})
-        timeline.to("#sc",0.7,{scale:0.7})
+        timeline.to("#sc",0.3,{scale:0.7})
     }
 
     return (

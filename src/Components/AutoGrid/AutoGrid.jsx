@@ -13,7 +13,7 @@ const AutoGrid = (props) => {
                             _.range(i*5,(i*5)+(i+5)).map((j)=>{
                                 return props.items.length>j?(
                                     <div key={j} className="icon">
-                                        <img src={props.items[j]?.icon} alt=""/>
+                                        <a target='_blank' href={props.items[j]?.link}><img src={props.items[j]?.icon} alt=""/></a>
                                     </div>
                                 ): null
 
