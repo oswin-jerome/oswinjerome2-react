@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AutoGrid.scss'
 import _ from "lodash";
+import gsap from 'gsap/gsap-core';
+import { ScrollTrigger } from 'gsap/all';
 const AutoGrid = (props) => {
     var rows = Math.ceil(props.items.length/5);
     console.log(rows)

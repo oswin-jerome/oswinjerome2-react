@@ -3,6 +3,7 @@ import './NavBar.scss'
 import hamMenu from './../../assets/ham_menu.svg';
 import ResumeBtn from '../../Components/ResumeBtn/ResumeBtn';
 import { gsap } from "gsap";
+import { Link } from 'react-router-dom';
 const NavBar = () => {
 
     const [drawerState,setDrawerState] = useState(true);
@@ -24,7 +25,7 @@ const NavBar = () => {
     return (
         <nav id="navBar">
             {/* Mobile nav */}
-            <ResumeBtn/>
+            
             <div className="mobileNav">
                 <div id="drawer" onClick={()=>{
                     t = gsap.timeline({
@@ -34,10 +35,10 @@ const NavBar = () => {
                     
                 }} className={drawerState?"drawer-closed":"drawer-opeaneds"}>
                     <ul id="mb-nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Clicks</a></li>
-                        <li><a href="#">Achievements</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/projects">Projects</Link></li>
+                        <li><Link to="#">Clicks</Link></li>
+                        <li><Link to="#">Achievements</Link></li>
                         
                     </ul>
                 </div>
@@ -57,10 +58,10 @@ const NavBar = () => {
                     <p className="logo">Logo</p>
                 </div>
                 <ul id="navList">
-                    <li className="navLinks"><a href="#">Home</a></li>
-                    <li className="navLinks"><a href="#">Projects</a></li>
-                    <li className="navLinks"><a href="#">Clicks</a></li>
-                    <li className="navLinks"><a href="#">Achivements</a></li>
+                    <li className="navLinks"><Link to="/">Home</Link></li>
+                    <li className="navLinks"><Link to="/projects">Projects</Link></li>
+                    <li className="navLinks"><Link to="#">Clicks</Link></li>
+                    <li className="navLinks"><Link to="#">Achivements</Link></li>
                     <li className="navLinks gradientText"><a href="#">Get My Resume</a></li>
                 </ul>
             </div>

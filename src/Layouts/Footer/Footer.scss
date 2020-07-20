@@ -1,0 +1,27 @@
+@import './../../utils';
+
+#Footer{
+    background-color: $footer;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+
+    .left{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (min-width:700px){
+    #Footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        .right{
+            text-align: right;
+        }
+         
+    }
+}
