@@ -37,8 +37,8 @@ const NavBar = () => {
                     <ul id="mb-nav-links">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/projects">Projects</Link></li>
-                        <li><Link to="#">Clicks</Link></li>
-                        <li><Link to="#">Achievements</Link></li>
+                        <li><Link to="/clicks">Clicks</Link></li>
+                        <li><Link to="/achievements">Achievements</Link></li>
                         
                     </ul>
                 </div>
@@ -60,8 +60,8 @@ const NavBar = () => {
                 <ul id="navList">
                     <li className="navLinks"><Link to="/">Home</Link></li>
                     <li className="navLinks"><Link to="/projects">Projects</Link></li>
-                    <li className="navLinks"><Link to="#">Clicks</Link></li>
-                    <li className="navLinks"><Link to="#">Achivements</Link></li>
+                    <li className="navLinks"><Link to="/clicks">Clicks</Link></li>
+                    <li className="navLinks"><Link to="/achievements">Achivements</Link></li>
                     <li className="navLinks gradientText"><a href="#">Get My Resume</a></li>
                 </ul>
             </div>

@@ -1,4 +1,5 @@
-@import './../../../utils';
+@import './../../utils';
+
 .pc{
     width: 90%;
     margin: auto;
@@ -8,6 +9,10 @@
         margin-top: 30px;
         display: grid;
         gap: 20px;
+        a{
+            text-decoration: none;
+            color: $textDark;
+        }
         div{
             box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.301);
             border-radius: 10px;
@@ -33,10 +38,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
-            a{
-                text-decoration: none;
-                color: $textDark;
-            }
             div{
                 // box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.301);
                 box-shadow: none;

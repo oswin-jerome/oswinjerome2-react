@@ -16,9 +16,9 @@ const HomePage = () => {
         gsap.registerPlugin(ScrollTrigger)
         var mods = document.querySelectorAll('.ha');
         mods.forEach((mod)=>{
-            gsap.from(mod,1,{scrollTrigger:{
+            gsap.from(mod,0.5,{scrollTrigger:{
                 trigger:mod,
-                scrub:true,
+                // scrub:true,
                 start:"center bottom",
                 end:"center 60%",
                 // markers:true
