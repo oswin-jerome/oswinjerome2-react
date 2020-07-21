@@ -30,7 +30,7 @@ const Hero = () => {
         var rb = document.getElementById('getResumeMob')
         timeline.from(rb,0.6,{y:100,opacity:0,scale:0.5},"-=0.5")
     }
-
+ 
     return (
         <div id="hero">
             <ResumeBtn />

@@ -21,7 +21,7 @@ const HomePage = () => {
                 scrub:true,
                 start:"center bottom",
                 end:"center 60%",
-                markers:true
+                // markers:true
                 
             },opacity:0,scale:0.5})
         })
