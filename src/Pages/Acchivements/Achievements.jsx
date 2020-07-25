@@ -7,7 +7,7 @@ const Achievements = () => {
     useEffect(()=>{
         var timeline = new gsap.timeline();
         timeline.from('.Projects',0.5,{opacity:0,x:20},'+=0.3')
-        timeline.from('.pc_imgs div',0.5,{opacity:0,scale:0.9,stagger:0.3})
+        timeline.from('.ac_imgs div',0.5,{opacity:0,scale:0.9,stagger:0.3})
     },[])
     return (
         <div>

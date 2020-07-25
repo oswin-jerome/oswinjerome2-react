@@ -1,0 +1,24 @@
+@import './../../../utils';
+
+.grad-btn{
+    // background-color: red;
+    background: linear-gradient(45deg,#7aa4ff , #847AFF,#7aa4ff , #847AFF);
+    background-size: 300%;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.198);
+}
+
+.grad-btn:hover{
+    background-position: -200px;
+    transition: background-position 1s;
+}
+
+#Testi{
+    text-align: center;
+}

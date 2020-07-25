@@ -8,6 +8,7 @@ import FollowMe from '../../Components/ForHome/FollowMe/FollowMe';
 import ContactMe from '../../Components/ForHome/ContactMe/ContactMe';
 import gsap from 'gsap/gsap-core';
 import { ScrollTrigger } from 'gsap/all';
+import Testimonials from '../../Components/ForHome/Testimonials/Testimonials';
 
 
 const HomePage = () => {
@@ -18,7 +19,7 @@ const HomePage = () => {
         mods.forEach((mod)=>{
             gsap.from(mod,0.5,{scrollTrigger:{
                 trigger:mod,
-                // scrub:true,
+                scrub:true,
                 start:"center bottom",
                 end:"center 60%",
                 // markers:true
@@ -37,6 +38,7 @@ const HomePage = () => {
             <div className="c ha" id="ann"><LangIKnow></LangIKnow></div>
             <div className="c ha"><FollowMe></FollowMe></div>
             <div className="c ha"><ContactMe></ContactMe></div>
+            <div className="c ha"><Testimonials></Testimonials></div>
         </div>
     );
 }

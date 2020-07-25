@@ -6,9 +6,9 @@ const ProjectCategory = (props) => {
     <div className="pc">
       <Heading text={props.pc.name}></Heading>
       <div className="pc_imgs">
-        {props.pc.projects.map((proj) => {
+        {props.pc.projects.map((proj,i) => {
           return (
-            <a target={proj.link?"_blank":""} href={proj.link?proj.link:"#"}>
+            <a key={i} target={proj.link?"_blank":""} href={proj.link?proj.link:"#"}>
               <div>
                 <img src={proj.image} alt="" />
                 <p>{proj.title}</p>

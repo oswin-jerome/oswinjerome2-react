@@ -2,19 +2,24 @@ var flutter = {
   name: "Courses",
   projects: [
     {
-      title: "Songs of Zion",
+      title: "Ethical Hacking",
       link: "",
-      image: require("./projects/songs_of_zion.jpg"),
+      image: require("./achievements/eth.png"),
     },
     {
-      title: "Grow Green",
+      title: "Flutter",
       link: "",
-      image: require("./projects/grow_green.jpg"),
+      image: require("./achievements/flutter.png"),
     },
     {
-      title: "Songs of Zion",
+      title: "Python",
       link: "",
-      image: require("./projects/songs_of_zion.jpg"),
+      image: require("./achievements/python.jpg"),
+    },
+    {
+      title: "MERN Stack",
+      link: "",
+      image: require("./achievements/mern.png"),
     },
   ],
 };
