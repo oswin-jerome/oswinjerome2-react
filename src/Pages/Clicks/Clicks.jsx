@@ -4,6 +4,7 @@ import './Clicks.scss'
 import gsap from 'gsap/gsap-core';
 import { ScrollTrigger } from 'gsap/all';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Loader from '../../Components/Loader/Loader';
 const Clicks = () => {
 
     const [clicksData,setClicksData] = useState([])
@@ -26,6 +27,7 @@ const Clicks = () => {
 
     return ( 
         <div>
+            <Loader/>
             <div className="gallary">
                 {
                     Images.map((img,i)=>{

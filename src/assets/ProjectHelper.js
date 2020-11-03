@@ -3,7 +3,7 @@ var flutter = {
   projects: [
     {
       title: "Songs of Zion",
-      link: "",
+      link: "https://oswin-jerome.github.io/songs_of_zion/",
       image: require("./projects/songs_of_zion.jpg"),
     },
     {

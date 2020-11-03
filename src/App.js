@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.scss";
 import NavBar from "./Layouts/NavBar/NavBar";
 import HomePage from "./Pages/Home/HomePage";
@@ -8,6 +8,9 @@ import Projects from "./Pages/Projects/Project";
 import Clicks from "./Pages/Clicks/Clicks";
 import Achievements from "./Pages/Acchivements/Achievements";
 function App() {
+
+  
+
   return (
     <div className="App">
       <Router>

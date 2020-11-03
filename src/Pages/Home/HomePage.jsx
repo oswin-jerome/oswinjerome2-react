@@ -9,6 +9,7 @@ import ContactMe from '../../Components/ForHome/ContactMe/ContactMe';
 import gsap from 'gsap/gsap-core';
 import { ScrollTrigger } from 'gsap/all';
 import Testimonials from '../../Components/ForHome/Testimonials/Testimonials';
+import Loader from '../../Components/Loader/Loader';
 
 
 const HomePage = () => {
@@ -24,9 +25,33 @@ const HomePage = () => {
                 end:"center 60%",
                 // markers:true
                 
-            },opacity:0,scale:0.5})
+            },opacity:0,scale:0.5,skewX:"35deg"})
+
+            console.log(mod.getElementsByClassName("icon"))
+            // gsap.fromTo(".icon",0.5,{scrollTrigger:{
+            //     trigger:mod,
+            //     scrub:false,
+            //     end:"center top",
+            //     start:"center bottom",
+            //     markers:true
+                
+            // },opacity:0,scale:2,stagger:0.2},{opacity:1,scale:1})
+
+            gsap.fromTo(mod.getElementsByClassName("icon"),{
+                opacity:0,scale:2
+            },{
+                scrollTrigger:{
+                    trigger:mod,
+                    scrub:true,
+                end:"center top",
+                start:"center bottom",
+                markers:true
+                },  
+                opacity:1,scale:1,stagger:0.2
+            })
         })
 
+        
 
     },[])
 
