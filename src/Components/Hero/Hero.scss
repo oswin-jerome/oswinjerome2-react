@@ -14,6 +14,8 @@
         box-shadow: 20px 20px 0px rgb(173, 173, 173);
         filter: grayscale(1);
         transition: filter 1s;
+
+        
     }
     #dp:hover{
         transition: filter 1s;
@@ -26,8 +28,28 @@
         color: $textDark;
         font-size: 2.7em;
         text-align: center;
+
+        
+    }
+    #name::after{
+        content: "" !important;
+        background-color: $primary;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        z-index: -1;
+        height: 10px;
+        opacity: 0.3;
+        border-radius: 50px;
+        transition: all .3s ease-in-out;
     }
 
+    #name:hover#name::after{
+        bottom: 15px;
+        height: 5px;
+        transition: all .3s ease-in-out;
+    }
 
     #desc{
         color: $textDark;
@@ -64,7 +86,10 @@
 
     #name{
         font-size: 3.4em !important;
+        
     }
+
+    
 }
 
 

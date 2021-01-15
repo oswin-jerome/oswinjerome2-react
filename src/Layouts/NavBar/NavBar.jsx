@@ -4,6 +4,8 @@ import hamMenu from './../../assets/ham_menu.svg';
 import ResumeBtn from '../../Components/ResumeBtn/ResumeBtn';
 import { gsap } from "gsap";
 import { Link } from 'react-router-dom';
+import resume from './../../assets/Oswin_Jerome.pdf'
+import $ from 'jquery'
 const NavBar = () => {
 
     const [drawerState,setDrawerState] = useState(true);
@@ -22,8 +24,19 @@ const NavBar = () => {
         t.play()
     }
 
+    $(document).ready(()=>{
+        // $(window).scroll(()=>{
+        //     if(!$(window).scrollTop()){
+        //         $('#navBar').removeClass('fixed')
+        //     }else{
+        //         $('#navBar').addClass('fixed')
+
+        //     }
+        // })
+    })
+
     return (
-        <nav id="navBar">
+        <nav id="navBar" className="">
             {/* Mobile nav */}
             
             <div className="mobileNav">
@@ -37,7 +50,7 @@ const NavBar = () => {
                     <ul id="mb-nav-links">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/projects">Projects</Link></li>
-                        <li><Link to="/clicks">Clicks</Link></li>
+                        {/* <li><Link to="/clicks">Clicks</Link></li> */}
                         <li><Link to="/achievements">Achievements</Link></li>
                         
                     </ul>
@@ -48,21 +61,21 @@ const NavBar = () => {
                         setDrawerState(!drawerState);
                         console.log(drawerState);
                     }}/>
-                    <p className="logo">Logo</p>
+                    <p className="logo">OJ</p>
                 </div>
             </div>
 
             {/* Nav */}
             <div className="wdNav">
                 <div className="logo">
-                    <p className="logo">Logo</p>
+                    <p className="logo">OJ</p>
                 </div>
                 <ul id="navList">
                     <li className="navLinks"><Link to="/">Home</Link></li>
                     <li className="navLinks"><Link to="/projects">Projects</Link></li>
-                    <li className="navLinks"><Link to="/clicks">Clicks</Link></li>
+                    {/* <li className="navLinks"><Link to="/clicks">Clicks</Link></li> */}
                     <li className="navLinks"><Link to="/achievements">Achivements</Link></li>
-                    <li className="navLinks gradientText"><a href="#">Get My Resume</a></li>
+                    <li className="navLinks gradientText"><a href={resume}>Get My Resume</a></li>
                 </ul>
             </div>
         </nav>

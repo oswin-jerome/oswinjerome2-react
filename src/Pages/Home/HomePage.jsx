@@ -18,14 +18,14 @@ const HomePage = () => {
         gsap.registerPlugin(ScrollTrigger)
         var mods = document.querySelectorAll('.ha');
         mods.forEach((mod)=>{
-            gsap.from(mod,0.5,{scrollTrigger:{
-                trigger:mod,
-                scrub:true,
-                start:"center bottom",
-                end:"center 60%",
-                // markers:true
+            // gsap.from(mod,0.5,{scrollTrigger:{
+            //     trigger:mod,
+            //     scrub:true,
+            //     start:"center bottom",
+            //     end:"center 60%",
+            //     // markers:true
                 
-            },opacity:0,scale:0.5,skewX:"35deg"})
+            // },opacity:0,scale:0.5,skewX:"35deg"})
 
             console.log(mod.getElementsByClassName("icon"))
             // gsap.fromTo(".icon",0.5,{scrollTrigger:{
@@ -42,10 +42,10 @@ const HomePage = () => {
             },{
                 scrollTrigger:{
                     trigger:mod,
-                    scrub:true,
-                end:"center top",
-                start:"center bottom",
-                markers:true
+                    scrub:false,
+                    end:"bottom top",
+                    start:"40% 80%",
+                    // markers:true
                 },  
                 opacity:1,scale:1,stagger:0.2
             })
