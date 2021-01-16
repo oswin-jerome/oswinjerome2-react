@@ -4,7 +4,7 @@ import dp from './../../assets/dp.jpg'
 import Typewriter from 'typewriter-effect/dist/core';
 import {gsap} from 'gsap';
 import ResumeBtn from '../ResumeBtn/ResumeBtn';
-import { ScrollTrigger } from 'gsap/all';
+// import { ScrollTrigger } from 'gsap/all';
 
 const Hero = () => {
 
@@ -35,11 +35,12 @@ const Hero = () => {
         <div id="hero">
             <ResumeBtn />
             <img src={dp} alt="" id="dp"/>
-            <p id="name">Oswin Jerome</p>
+            <h1 id="name">Oswin Jerome</h1>
             <p id="desc">I'm a <span id="type">Coder.</span></p>
             <div id="sc" onClick={()=>{window.scroll(0,500); console.log("sds");animation()}}>
                 <div className='icon-scroll'></div>
             </div>
+
         </div>
     );
 }

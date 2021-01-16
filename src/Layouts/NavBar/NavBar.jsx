@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './NavBar.scss'
 import hamMenu from './../../assets/ham_menu.svg';
-import ResumeBtn from '../../Components/ResumeBtn/ResumeBtn';
+// import ResumeBtn from '../../Components/ResumeBtn/ResumeBtn';
 import { gsap } from "gsap";
 import { Link } from 'react-router-dom';
 import resume from './../../assets/Oswin_Jerome.pdf'

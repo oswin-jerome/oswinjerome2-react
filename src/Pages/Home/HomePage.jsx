@@ -10,11 +10,13 @@ import gsap from 'gsap/gsap-core';
 import { ScrollTrigger } from 'gsap/all';
 import Testimonials from '../../Components/ForHome/Testimonials/Testimonials';
 import Loader from '../../Components/Loader/Loader';
+import RecentWorks from '../../Components/ForHome/RecentWorks/RecentWorks';
 
 
 const HomePage = () => {
 
     useEffect(()=>{
+        
         gsap.registerPlugin(ScrollTrigger)
         var mods = document.querySelectorAll('.ha');
         mods.forEach((mod)=>{
@@ -55,10 +57,13 @@ const HomePage = () => {
 
     },[])
 
+
     return (
         <div id="homePage">
+            
             <div className="c"><Hero></Hero></div>
-            {/* <div className="c"><MyStory></MyStory></div> */}
+            <div className="c"><MyStory></MyStory></div>
+            <div className="c"><RecentWorks></RecentWorks></div>
             <div className="c ha"><TechIWork></TechIWork></div>
             <div className="c ha" id="ann"><LangIKnow></LangIKnow></div>
             <div className="c ha"><FollowMe></FollowMe></div>

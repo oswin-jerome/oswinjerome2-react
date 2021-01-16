@@ -1,7 +1,7 @@
 import React from 'react';
 import Heading from '../../Heading/Heading';
 import './contactMe.scss'
-import {phone, wa, gmail} from './../../../assets/AssetsHelper'
+import {phone,  gmail} from './../../../assets/AssetsHelper'
 const ContactMe = () => {
     return (
         <div className="padder">

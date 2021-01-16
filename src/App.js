@@ -1,4 +1,8 @@
-import React, { useEffect } from "react";
+/*
+ *   Copyright (c) 2021 
+ *   All rights reserved.
+ */
+import React from "react";
 import "./App.scss";
 import NavBar from "./Layouts/NavBar/NavBar";
 import HomePage from "./Pages/Home/HomePage";

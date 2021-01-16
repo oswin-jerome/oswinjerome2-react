@@ -4,7 +4,7 @@ const ResumeBtn = () => {
     const [visible,setVisible] = useState(true);
     useEffect(()=>{
         window.addEventListener('scroll',(e)=>{
-            if(window.pageYOffset==0){
+            if(window.pageYOffset===0){
                 setVisible(true);
             }else{
                 setVisible(false);

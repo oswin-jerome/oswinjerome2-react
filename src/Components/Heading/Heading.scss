@@ -5,6 +5,21 @@
     font-size: 26px;
     span{
         color: $primary;
+        position: relative;
+        opacity: 0.999;
+    }
+
+    span::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 10%;
+        height: 6px;
+        bottom: 5px;
+        z-index:-1;
+        background-color:$primary;
+        opacity: 0.2;
+        border-radius: 50px;
     }
 }
 

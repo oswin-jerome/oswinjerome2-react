@@ -1,9 +1,9 @@
 
 
 import './Heading.scss'
-import React, { Component, useEffect } from 'react';
-import { ScrollTrigger } from 'gsap/all';
-import gsap from 'gsap/gsap-core';
+import React from 'react';
+// import { ScrollTrigger } from 'gsap/all';
+// import gsap from 'gsap/gsap-core';
 
 const Heading = (props) => {
    

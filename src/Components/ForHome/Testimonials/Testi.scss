@@ -14,6 +14,49 @@
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.198);
 }
 
+.slick-prev:before,
+.slick-next:before {
+    // font-family:initial!important;
+    color:rgb(231, 231, 231) !important; 
+}
+
+.car-list{
+    
+    padding: 15px 10px;
+
+    .car-card{
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.116);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .car-dp{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            
+            
+        }
+
+        .car-msg{
+            margin-top: 20px;
+        }
+
+        .car-name{
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .car-name::before{
+            content: "- ";
+        }
+    }
+}
+
 .grad-btn:hover{
     background-position: -200px;
     transition: background-position 1s;
