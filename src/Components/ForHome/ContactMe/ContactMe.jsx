@@ -12,12 +12,12 @@ const ContactMe = () => {
                     <img src={wa} alt=""/><p>8344441492</p>
                 </div>
                 </a> */}
-                <a href="#">
+                <a href="tel://919487839640">
                 <div className="phone shadow rounded-border">
                     <img src={phone} alt=""/><p>9489827339</p>
                 </div>
                 </a>
-                <a href="">
+                <a href="mailto://oswinjeromej@gmail.com">
                 <div className="email shadow rounded-border">
                    <img src={gmail} alt=""/><p>oswinjeromej@gmail.com</p>
                 </div>

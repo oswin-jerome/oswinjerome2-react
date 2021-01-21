@@ -24,16 +24,16 @@ const NavBar = () => {
         t.play()
     }
 
-    $(document).ready(()=>{
-        // $(window).scroll(()=>{
-        //     if(!$(window).scrollTop()){
-        //         $('#navBar').removeClass('fixed')
-        //     }else{
-        //         $('#navBar').addClass('fixed')
+    // $(document).ready(()=>{
+    //     $(window).scroll(()=>{
+    //         if(!$(window).scrollTop()){
+    //             $('#navBar').removeClass('fixed')
+    //         }else{
+    //             $('#navBar').addClass('fixed')
 
-        //     }
-        // })
-    })
+    //         }
+    //     })
+    // })
 
     return (
         <nav id="navBar" className="">

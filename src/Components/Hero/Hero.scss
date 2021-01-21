@@ -4,6 +4,7 @@
 
 #hero{
     height: calc(100vh - 70px);
+    // height: calc(100vh - 0px);
     display: flex;
     flex-direction: column;
     // justify-content: center;
@@ -14,14 +15,17 @@
         border-radius: 50%;
         border: 5px solid #fff;
         box-shadow: 20px 20px 0px rgb(173, 173, 173);
-        filter: grayscale(1);
-        transition: filter 1s;
+        // filter: grayscale(1);
+        // transition: filter 1s;
+        // transform: rotateX(10deg);
 
         
     }
     #dp:hover{
-        transition: filter 1s;
-        filter: grayscale(0);
+        // transition: filter 1s;
+        // filter: grayscale(0);
+        // transform: rotateX(0deg);
+
     }
 
     #name{

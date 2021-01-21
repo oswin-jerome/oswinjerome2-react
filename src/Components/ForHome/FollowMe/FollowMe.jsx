@@ -6,20 +6,21 @@ const FollowMe = () => {
     var soc = [
         {
             icon:fb,
-            link:'sds'
+            link:'https://www.facebook.com/oswin.jerome'
         },
         {
             icon:github,
-            link:'sds'
+            link:'https://github.com/oswin-jerome'
         },
         {
             icon:insta,
-            link:'sds'
+            link:'https://www.instagram.com/oswin_jerome/'
         },
         {
             icon:tw,
-            link:'sds'
+            link:'https://twitter.com/oswin_jerome'
         },
+        
     ]
     return ( 
         <div className="padder">

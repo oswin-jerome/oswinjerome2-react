@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import achievementData from './../../assets/achievementHelper';
 import AchievementCategories from '../../Components/AchievementsCategories/AchievementCategories';
 import gsap from 'gsap/gsap-core';
+import {Helmet} from 'react-helmet'
 const Achievements = () => {
 
     useEffect(()=>{
@@ -13,7 +14,9 @@ const Achievements = () => {
     },[])
     return (
         <div>
-            
+            <Helmet>
+                <title>My Achievements</title>
+            </Helmet>
             <div className="Projects">
                 {
                     achievementData.map((pc)=>{

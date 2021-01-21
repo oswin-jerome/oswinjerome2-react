@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import projectsData from './../../assets/ProjectHelper';
 import ProjectCategory from '../../Components/ForProjects/ProjectCategory/ProjectCategory';
 import gsap from 'gsap/gsap-core';
+import {Helmet} from 'react-helmet'
+
 const Projects = () => {
 
     useEffect(()=>{
@@ -11,6 +13,9 @@ const Projects = () => {
     },[])
     return (
         <div>
+            <Helmet>
+                <title>My Projects</title>
+            </Helmet>
             <div className="Projects">
                 {
                     projectsData.map((pc)=>{

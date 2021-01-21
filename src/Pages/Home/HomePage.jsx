@@ -11,6 +11,7 @@ import { ScrollTrigger } from 'gsap/all';
 import Testimonials from '../../Components/ForHome/Testimonials/Testimonials';
 import Loader from '../../Components/Loader/Loader';
 import RecentWorks from '../../Components/ForHome/RecentWorks/RecentWorks';
+import {Helmet} from 'react-helmet'
 
 
 const HomePage = () => {
@@ -40,7 +41,7 @@ const HomePage = () => {
             // },opacity:0,scale:2,stagger:0.2},{opacity:1,scale:1})
 
             gsap.fromTo(mod.getElementsByClassName("icon"),{
-                opacity:0,scale:2
+                opacity:0,scale:0,rotate:"5deg"
             },{
                 scrollTrigger:{
                     trigger:mod,
@@ -49,21 +50,37 @@ const HomePage = () => {
                     start:"40% 80%",
                     // markers:true
                 },  
-                opacity:1,scale:1,stagger:0.2
+                opacity:1,scale:1,stagger:0.2,rotate:"0deg"
             })
         })
 
-        
+        var heds = document.querySelectorAll('.Heading');
+        heds.forEach((e)=>{
+            gsap.fromTo(e,{
+                opacity:0,scale:0,rotate:"5deg"
+            },{
+                scrollTrigger:{
+                    trigger:e,
+                    scrub:false,
+                    end:"bottom top",
+                    start:"40% 80%",
+                    // markers:true
+                },  
+                opacity:1,scale:1,stagger:0.2,rotate:"0deg"
+            })
+        })
 
     },[])
 
 
     return (
         <div id="homePage">
-            
+            <Helmet>
+                <title>Oswin Jerome</title>
+            </Helmet>
             <div className="c"><Hero></Hero></div>
-            <div className="c"><MyStory></MyStory></div>
-            <div className="c"><RecentWorks></RecentWorks></div>
+            {/* <div className="c"><MyStory></MyStory></div>
+            <div className="c"><RecentWorks></RecentWorks></div> */}
             <div className="c ha"><TechIWork></TechIWork></div>
             <div className="c ha" id="ann"><LangIKnow></LangIKnow></div>
             <div className="c ha"><FollowMe></FollowMe></div>

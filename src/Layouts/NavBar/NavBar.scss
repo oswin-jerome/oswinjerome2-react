@@ -72,6 +72,30 @@
         }
     }
 }
+.navLinks{
+    position: relative;
+}
+.navLinks::after{
+    content: "";
+    position: absolute;
+    left: 13px;
+    right: 100%;
+    bottom: 0;
+    height: 8px;
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: $primary;
+    transition: all 0.3s ease-in;
+
+}
+
+.navLinks:hover.navLinks::after{
+    // opacity: 0;
+    right: 20px !important;
+    transition: all 0.5s ease-in;
+
+}
 
 .drawer-closed{
     left: -100vw;
@@ -102,7 +126,7 @@
 
 .navLinks:hover a{
     color: $primaryDark !important;
-    border-bottom: 3px solid $primaryDark;
+    // border-bottom: 3px solid $primaryDark;
 }
 
 
