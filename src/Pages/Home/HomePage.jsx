@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Hero from '../../Components/Hero/Hero';
+import Hero2 from '../../Components/Hero2/Hero2';
 import MyStory from '../../Components/MyStory/MyStory';
 import './HomePage.scss'
 import TechIWork from '../../Components/ForHome/TechIWork/TechIWork';
@@ -78,7 +79,8 @@ const HomePage = () => {
             <Helmet>
                 <title>Oswin Jerome</title>
             </Helmet>
-            <div className="c"><Hero></Hero></div>
+            <div className="c"><Hero2></Hero2></div>
+            {/* <div className="c"><Hero></Hero></div> */}
             {/* <div className="c"><MyStory></MyStory></div>
             <div className="c"><RecentWorks></RecentWorks></div> */}
             <div className="c ha"><TechIWork></TechIWork></div>

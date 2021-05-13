@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2021 
+ *   All rights reserved.
+ */
 var flutter = {
   name: "Courses",
   projects: [
@@ -34,6 +38,6 @@ var reactjs = {
   ],
 };
 
-var data = [flutter, reactjs];
+var data = [flutter];
 
 export default data;

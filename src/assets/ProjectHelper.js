@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2021 
+ *   All rights reserved.
+ */
 var flutter = {
   name: "Flutter",
   projects: [
@@ -10,11 +14,6 @@ var flutter = {
       title: "Grow Green",
       link: "",
       image: require("./projects/grow_green.jpg"),
-    },
-    {
-      title: "Songs of Zion",
-      link: "",
-      image: require("./projects/songs_of_zion.jpg"),
     },
   ],
 };
@@ -29,6 +28,17 @@ var reactjs = {
   ],
 };
 
-var data = [flutter, reactjs];
+var laravel = {
+  name: "Laravel",
+  projects: [
+    {
+      title: "Billocity",
+      link: "http://billocity.coderapps.xyz/",
+      image: require("./projects/billocity.jpg"),
+    },
+  ],
+};
+
+var data = [flutter,laravel];
 
 export default data;

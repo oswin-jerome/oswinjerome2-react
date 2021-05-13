@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2021 
+ *   All rights reserved.
+ */
 import android from './TechWork/android-studio.png'
 import _adobeXD from './TechWork/adobe-xd.svg'
 import _flutter from './TechWork/flutter.svg'
