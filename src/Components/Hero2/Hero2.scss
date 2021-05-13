@@ -1,126 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import './../../utils';
+// @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+// @import './../../utils';
 
-#hero2{
-    height: calc(100vh - 70px);
+// #hero2{
+//     height: calc(100vh - 70px);
 
-    .content{
-        .right{
-            text-align: center;
-        }
+//     .content{
+//         .right{
+//             text-align: center;
+//         }
 
-        .left{
-            #name{
-                margin-top: 30px;
-                font-family: 'Pacifico', cursive;
-                color: $primaryDark;
-                font-size: 2.7em;
-                text-align: center;
-                font-weight: normal;
-                span{
-                    display:none;
-                }
-            }
-            #desc{
-                color: $textDark;
-                text-align: center;
-                font-size:20px;
-                font-weight:bold;
-                span{
-                    color: #E47AF4;
-                    font-weight: bold;
-                }
-            }
-        }
-    }
+//         .left{
+//             #name{
+//                 margin-top: 30px;
+//                 font-family: 'Pacifico', cursive;
+//                 color: $primaryDark;
+//                 font-size: 2.7em;
+//                 text-align: center;
+//                 font-weight: normal;
+//                 span{
+//                     display:none;
+//                 }
+//             }
+//             #desc{
+//                 color: $textDark;
+//                 text-align: center;
+//                 font-size:20px;
+//                 font-weight:bold;
+//                 span{
+//                     color: #E47AF4;
+//                     font-weight: bold;
+//                 }
+//             }
+//         }
+//     }
 
-}
+// }
 
-@media screen and (min-width: 768px){
-    #hero2{
-        padding-top: 8%;
-    }
-    .content{
-        width: 90%;
-        margin: auto;
-        // margin-top: 30px;
-        position: relative;
-        display:flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: start;
-        .right{
-            flex: 1;
-            height: 100% !important;
-        }
-        .left{
-            height: 100% !important;
-            flex: 1;
-            #name, #desc{
+// @media screen and (min-width: 768px){
+//     #hero2{
+//         padding-top: 8%;
+//     }
+//     .content{
+//         width: 90%;
+//         margin: auto;
+//         // margin-top: 30px;
+//         position: relative;
+//         display:flex;
+//         flex-direction: row-reverse;
+//         justify-content: center;
+//         align-items: start;
+//         .right{
+//             flex: 1;
+//             height: 100% !important;
+//         }
+//         .left{
+//             height: 100% !important;
+//             flex: 1;
+//             #name, #desc{
 
-                text-align:left !important;
-            }
+//                 text-align:left !important;
+//             }
 
-            #name{
-                span{
-                    display: initial !important;
-                    font-family: 'Pacifico', cursive;
-                    color: rgb(139, 139, 139) !important;
-                }
-            }
-            #desc{
-                margin-top:15px !important;
-                font-size:26px !important;
-            }
-        }
-    }
-}
+//             #name{
+//                 span{
+//                     display: initial !important;
+//                     font-family: 'Pacifico', cursive;
+//                     color: rgb(139, 139, 139) !important;
+//                 }
+//             }
+//             #desc{
+//                 margin-top:15px !important;
+//                 font-size:26px !important;
+//             }
+//         }
+//     }
+// }
 
 
-@media screen and (min-width: 1000px){
-    #dp{
-        height: 50vh;
-    }
-}
-#sc{
-    position: absolute;
-    bottom: 70px;
-}
-.icon-scroll,
-.icon-scroll:before{
-  position: absolute;
-  left: 50%;
-}
+// @media screen and (min-width: 1000px){
+//     #dp{
+//         height: 50vh;
+//     }
+// }
+// #sc{
+//     position: absolute;
+//     bottom: 70px;
+// }
+// .icon-scroll,
+// .icon-scroll:before{
+//   position: absolute;
+//   left: 50%;
+// }
 
-.icon-scroll{
-  width: 30px;
-  height: 50px;
-  margin-left: -20px;
-  top: 50%;
-  margin-top: -35px;
-  box-shadow: inset 0 0 0 3px $primary;
-  border-radius: 25px;
-}
+// .icon-scroll{
+//   width: 30px;
+//   height: 50px;
+//   margin-left: -20px;
+//   top: 50%;
+//   margin-top: -35px;
+//   box-shadow: inset 0 0 0 3px $primary;
+//   border-radius: 25px;
+// }
 
-.icon-scroll:before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background: $primary;
-  margin-left: -4px;
-  top: 8px;
-  border-radius: 4px;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-name: scroll;
-}
+// .icon-scroll:before {
+//   content: '';
+//   width: 8px;
+//   height: 8px;
+//   background: $primary;
+//   margin-left: -4px;
+//   top: 8px;
+//   border-radius: 4px;
+//   animation-duration: 1.5s;
+//   animation-iteration-count: infinite;
+//   animation-name: scroll;
+// }
 
-@keyframes scroll{
-    0%{
-      opacity: 1;
-      }
-    100%{
-      opacity: 0;
-      transform: translateY(30px);
-    }
-  }
+// @keyframes scroll{
+//     0%{
+//       opacity: 1;
+//       }
+//     100%{
+//       opacity: 0;
+//       transform: translateY(30px);
+//     }
+//   }
