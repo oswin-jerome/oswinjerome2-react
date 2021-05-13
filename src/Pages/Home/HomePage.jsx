@@ -79,8 +79,8 @@ const HomePage = () => {
             <Helmet>
                 <title>Oswin Jerome</title>
             </Helmet>
-            <div className="c"><Hero2></Hero2></div>
-            {/* <div className="c"><Hero></Hero></div> */}
+            {/* <div className="c"><Hero2></Hero2></div> */}
+            <div className="c"><Hero></Hero></div>
             {/* <div className="c"><MyStory></MyStory></div>
             <div className="c"><RecentWorks></RecentWorks></div> */}
             <div className="c ha"><TechIWork></TechIWork></div>
