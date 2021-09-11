@@ -15,6 +15,11 @@ var flutter = {
       link: "",
       image: require("./projects/grow_green.jpg"),
     },
+    {
+      title: "Invoice generator",
+      link: "https://github.com/oswin-jerome/basic_invoice_generator",
+      image: require("./projects/invoice.png"),
+    },
   ],
 };
 var reactjs = {
