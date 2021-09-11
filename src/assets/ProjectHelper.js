@@ -28,17 +28,28 @@ var reactjs = {
   ],
 };
 
+var vuejs = {
+  name: "Vue 3",
+  projects: [
+    {
+      title: "Pickle Store",
+      link: "https://oswin-jerome.github.io/pickle",
+      image: require("./projects/pickle.png"),
+    },
+  ],
+};
+
 var laravel = {
   name: "Laravel",
   projects: [
     {
       title: "Billocity",
-      link: "http://billocity.coderapps.xyz/",
+      link: "http://billocity.ideaux.in/",
       image: require("./projects/billocity.jpg"),
     },
   ],
 };
 
-var data = [flutter,laravel];
+var data = [flutter,laravel,vuejs];
 
 export default data;

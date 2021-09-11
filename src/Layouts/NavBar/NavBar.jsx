@@ -52,6 +52,7 @@ const NavBar = () => {
                         <li><Link to="/projects">Projects</Link></li>
                         {/* <li><Link to="/clicks">Clicks</Link></li> */}
                         <li><Link to="/achievements">Achievements</Link></li>
+                        {/* <li><Link to="/blogs">Blogs</Link></li> */}
                         
                     </ul>
                 </div>
@@ -75,6 +76,7 @@ const NavBar = () => {
                     <li className="navLinks"><Link to="/projects">Projects</Link></li>
                     {/* <li className="navLinks"><Link to="/clicks">Clicks</Link></li> */}
                     <li className="navLinks"><Link to="/achievements">Achivements</Link></li>
+                    {/* <li className="navLinks"><Link to="/blogs">Blogs</Link></li> */}
                     <li className="navLinks gradientText"><a href={resume}>Get My Resume</a></li>
                 </ul>
             </div>

@@ -11,6 +11,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Projects from "./Pages/Projects/Project";
 import Clicks from "./Pages/Clicks/Clicks";
 import Achievements from "./Pages/Acchivements/Achievements";
+import Blogs from "./Pages/Blogs/Blogs";
+import Blog from "./Pages/Blogs/blog";
 function App() {
 
   
@@ -30,6 +32,13 @@ function App() {
             <Route path="/projects">
               <Projects></Projects>
             </Route>
+            <Route path="/blogs/:slug">
+              <Blog/>
+            </Route>
+            <Route path="/blogs">
+              <Blogs/>
+            </Route>
+           
             <Route path="/">
               <HomePage></HomePage>
             </Route>

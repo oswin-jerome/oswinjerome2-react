@@ -1,7 +1,7 @@
 import React from 'react';
 import Heading from '../../Heading/Heading';
 import AutoGrid from '../../AutoGrid/AutoGrid';
-import {fb, github, insta, tw} from './../../../assets/AssetsHelper'
+import {fb, github, insta, tw,linkedin} from './../../../assets/AssetsHelper'
 const FollowMe = () => {
     var soc = [
         {
@@ -19,6 +19,10 @@ const FollowMe = () => {
         {
             icon:tw,
             link:'https://twitter.com/oswin_jerome'
+        },
+        {
+            icon:linkedin,
+            link:'https://www.linkedin.com/in/oswin-jerome-708587154/'
         },
         
     ]

@@ -62,7 +62,7 @@ const Testimonials = () => {
     return ( 
         <div className="padder" id="Testi">
             <Heading text="Feedbacks / Testimonies"></Heading>
-            {/* <Slider {...settings} style={{width:"90vw",margin:"auto"}} >
+            <Slider {...settings} style={{width:"90vw",margin:"auto"}} >
                 <div className="car-list">
                     <div className="car-card">
                         <img src="https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" alt="" className="car-dp"/>
@@ -101,7 +101,7 @@ const Testimonials = () => {
                 
                 
                 
-            </Slider> */}
+            </Slider>
             <a href="https://forms.gle/VM1vVDkkgsok8Z697" target="_blank" className="btn grad-btn">Give your feedback</a>
         </div>
      );

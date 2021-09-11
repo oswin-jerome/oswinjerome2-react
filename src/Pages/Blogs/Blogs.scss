@@ -1,0 +1,77 @@
+@import './../../utils';
+
+.blogsContainer{
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.blogs{
+    
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    margin-top: 30px;
+    a{
+        text-decoration: none;
+        color: $textDark;
+    }
+    
+    .blog{
+        margin-top:20px;
+        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 10px 10px 10px 10px;
+        img{
+            border-radius: 10px 10px 0px 0px;
+            width: 100%;
+        }
+
+        h3{
+            padding:10px;
+        }
+    }
+}
+
+@media only screen and (min-width:600px){
+    .blogsContainer{
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .blogs{
+        width: 80%;
+        margin-top: 40px;
+
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width:800px){
+    .blogsContainer{
+
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .blogs{
+        width: 80%;
+        margin-top: 50px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+
+@media only screen and (min-width:1250px){
+    .blogsContainer{
+
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .blogs{
+        width: 70%;
+        margin-top: 50px;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,32 @@
+.blogHolder{
+    width: 90vw;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+@media only screen and (min-width:600px){
+    .blogHolder{
+        width: 90%;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        
+    }
+}
+
+@media only screen and (min-width:800px){
+    .blogHolder{
+        width: 80%;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media only screen and (min-width:1250px){
+    .blogHolder{
+        width: 70%;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+}
