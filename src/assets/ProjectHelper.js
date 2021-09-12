@@ -20,6 +20,11 @@ var flutter = {
       link: "https://github.com/oswin-jerome/basic_invoice_generator",
       image: require("./projects/invoice.png"),
     },
+    {
+      title: "Personal Todo",
+      link: "https://github.com/oswin-jerome/personal-todo",
+      image: require("./projects/personal_todo.jpg"),
+    },
   ],
 };
 var reactjs = {
