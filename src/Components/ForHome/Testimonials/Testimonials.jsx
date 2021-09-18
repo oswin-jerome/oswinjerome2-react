@@ -70,35 +70,6 @@ const Testimonials = () => {
                         <p className="car-name">Lorem, ipsum.</p>
                     </div>
                 </div>
-                <div className="car-list">
-                    <div className="car-card">
-                        <img src="https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" alt="" className="car-dp"/>
-                        <p className="car-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nulla?</p>
-                        <p className="car-name">Lorem, ipsum.</p>
-                    </div>
-                </div>
-                <div className="car-list">
-                    <div className="car-card">
-                        <img src="https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" alt="" className="car-dp"/>
-                        <p className="car-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nulla?</p>
-                        <p className="car-name">Lorem, ipsum.</p>
-                    </div>
-                </div>
-                <div className="car-list">
-                    <div className="car-card">
-                        <img src="https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" alt="" className="car-dp"/>
-                        <p className="car-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nulla?</p>
-                        <p className="car-name">Lorem, ipsum.</p>
-                    </div>
-                </div>
-                <div className="car-list">
-                    <div className="car-card">
-                        <img src="https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg" alt="" className="car-dp"/>
-                        <p className="car-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nulla?</p>
-                        <p className="car-name">Lorem, ipsum.</p>
-                    </div>
-                </div>
-                
                 
                 
             </Slider>

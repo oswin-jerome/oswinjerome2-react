@@ -22,7 +22,7 @@ var flutter = {
     },
     {
       title: "Personal Todo",
-      link: "https://github.com/oswin-jerome/personal-todo",
+      link: "https://oswin-jerome.github.io/personal-todo",
       image: require("./projects/personal_todo.jpg"),
     },
   ],
@@ -45,6 +45,11 @@ var vuejs = {
       title: "Pickle Store",
       link: "https://oswin-jerome.github.io/pickle",
       image: require("./projects/pickle.png"),
+    },
+    {
+      title: "Emirates",
+      link: "https://oswin-jerome.github.io/emirates-vue",
+      image: require("./projects/emirates.png"),
     },
   ],
 };
