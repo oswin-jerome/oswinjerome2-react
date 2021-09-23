@@ -51,6 +51,11 @@ var vuejs = {
       link: "https://oswin-jerome.github.io/emirates-vue",
       image: require("./projects/emirates.png"),
     },
+    {
+      title: "Resume Generator",
+      link: "https://oswin-jerome.github.io/resume-generator",
+      image: require("./projects/resume-generator.jpg"),
+    },
   ],
 };
 

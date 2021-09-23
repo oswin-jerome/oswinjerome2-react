@@ -8,10 +8,10 @@ const RecentWorks = () => {
         <div id="recentWorks" className="pc">
             <Heading text="Recent " primary2="Works"></Heading>
             <div className="pc_imgs">
-                    <a target="_blank" href="https://oswin-jerome.github.io/pickle">
+                    <a target="_blank" href="https://oswin-jerome.github.io/resume-generator">
                     <div>
-                        <img src={require("./../../../assets/projects//pickle.png")} alt="" />
-                        <p>Pickle Store</p>
+                        <img src={require("./../../../assets/projects//resume-generator.jpg")} alt="" />
+                        <p>Resume Generator</p>
                     </div>
                     </a>
                     <a target="_blank" href="http://billocity.ideaux.in/">
